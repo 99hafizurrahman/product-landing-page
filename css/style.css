@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-
+:root{
+    --one:1rem;
+    --black:#070605;
+    --yellow-alfa:#ffd904;
+    --yellow:yellow;
+    --gray:#c7c2bb;
+}
 
 *,
 *::before,
@@ -38,7 +44,7 @@ margin: auto;
     no-repeat; /* this applies to both images */
     background-size: 30rem;
    
-    margin:auto 1rem;
+    margin:auto var(--one);
     
 }
 
@@ -55,31 +61,31 @@ ul{
 }
 .nav-link,.footer-item{
     text-decoration: none;
-    color: rgb(20, 17, 17);
+    color: #141111;
 }
 .nav-link:hover{
 
-    background-color: #ffd904;
+    background-color: var(--yellow-alfa);
     
     transition-duration: 800ms;
 }
 #header-img{
     height: 3.5rem;
     width: 3.5rem;
-    margin: 1rem;
+    margin: var(--one);
 }
 .form-control{
-    margin:1rem auto ;
+    margin:var(--one) auto ;
 }
 #email{
     padding:0.5rem ;
-    font-size: 1rem;
+    font-size: var(--one);
 }
 .button{
-    background-color: yellow;
+    background-color: var(--yellow);
     font-size: 1.2rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: var(--one);
+    margin-bottom: var(--one);
     padding: 0.4rem 0.8rem;
     border: none;
     border-radius: 0.2rem;
@@ -87,7 +93,7 @@ ul{
 
 .button:hover{
    
-    background-color: #ffd904; transition-duration: 500ms;
+    background-color: var(--yellow-alfa); transition-duration: 500ms;
 }
 
 .icons{
@@ -104,7 +110,7 @@ ul{
 li,a{
    
     text-decoration: none;
-    color:#070605
+    color:var(--black)
     
 }
 
@@ -114,15 +120,15 @@ li,a{
 
 #footer{
 
-background-color: #c7c2bb;
-color:#070605
+background-color: var(--gray);
+color:var(--black)
 }
 .footer{
     display: flex;
  justify-content: center;    
 }
 .footer-item{
-    padding: 1rem;
+    padding: var(--one);
 }
 #features{
    
@@ -134,31 +140,31 @@ color:#070605
     padding-bottom: 3rem;
 }
 .feature-heading{
-    padding-bottom:1rem;
-    padding-top: 1rem;
+    padding-bottom:var(--one);
+    padding-top: var(--one);
 }
 
 
 .price{
    
    
-    margin: 1rem ;
-    border:0.1rem solid #070605;
+    margin: var(--one) ;
+    border:0.1rem solid var(--black);
    
    border-radius: 0.2rem;
     
 }
 
 .price-cost{
-    padding:1rem;
+    padding:var(--one);
     font-size: 1.3rem;
 }
 
 .price-title{
-    background-color: #c7c2bb;
+    background-color: var(--gray);
     padding:1.5rem;
 }.feature-list{
-    padding:1rem;
+    padding:var(--one);
 }
 
 .feature-item{
@@ -182,7 +188,7 @@ color:#070605
    .nav-link{
        display: flex;
        justify-content: space-evenly;
-       padding: 1rem;
+       padding: var(--one);
    }
    #video{
        max-width: 560px ;
